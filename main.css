@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 1024px;
+}
+
+header {
+    background-color: rgb(41, 91, 199);
+    padding: 20px;
+    margin-bottom: 38px;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+header li {
+    display: inline;
+    list-style: none;
+}
+
+header, header a {
+    color: #fff;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 18px;
+}
+
+.sobre {
+    display: flex;
+    margin-bottom: 38px;
+}
+
+.sobre div {
+    margin-left: 30px;
+}
+
+.sobre img {
+    max-width: 100%;
+}
+
+section h2 {
+    padding-bottom: 16px;
+    color: rgb(41, 91, 199);
+    border-bottom: 3px solid rgb(41, 91, 199);
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    margin-bottom: 30px;
+}
+
+.produto {
+    width: 100%;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.produto p {
+    margin: 16px 0;
+    width: 100%;
+}
+
+.sessao-produtos {
+    margin-top: 16px;
+}
+
+.produtos button {
+    background-color: rgb(41, 91, 199);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 32px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.produtos button:hover {
+    background-color: rgb(66, 115, 219);
+}
+
+@media screen and (max-width: 640px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 16px 32px;
+    }
+
+    header nav li {
+        display: inline-block;
+        margin: 4px 0;
+    }
+
+    .sobre {
+        display: block;
+        max-width: 100%;
+    }
+
+    .sobre img {
+        display: block;
+        margin: 0 auto;
+        max-width: inherit;
+        padding: 0 30px;
+    }
+
+    .sobre div {
+        margin: 30px;
+    }
+
+    .sessao-produtos {
+        margin: 0 30px;
+    }
+
+    .produtos {
+        display: block;
+        width: 100%;
+    }
+
+    .produto {
+        margin: 30px 0;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    header {
+        padding: 16px 0;
+    }
+
+    header h1 {
+        margin-left: 64px;
+    }
+
+    header nav {
+        margin-right: 70px;
+    }
+
+    .container-principal {
+        width: 680px;
+        max-width: 100%;
+    }
+
+    .sobre {
+        display: block;
+        max-width: 100%;
+    }
+
+    .sobre img {
+        display: block;
+        max-width: inherit;
+        width: 680px;
+        margin: 0;
+    }
+
+    .sobre div {
+        margin: 30px 0;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 16px;
+    }
+}
